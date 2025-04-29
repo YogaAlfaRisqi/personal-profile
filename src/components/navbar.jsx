@@ -13,7 +13,7 @@ export default function Navbar() {
   }, [isDarkMode]);
 
   return (
-    <header className="h-16 w-full flex items-center justify-end px-6 border-b bg-background">
+    <header>
       
       <button
         onClick={() => setIsDarkMode(!isDarkMode)}
