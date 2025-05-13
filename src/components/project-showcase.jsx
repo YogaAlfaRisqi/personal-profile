@@ -5,31 +5,31 @@ const projects = [
   {
     title: "JOYMATH Website",
     description: "Website Pembelajaran",
-    image: "src/assets/images/Projek1.png",
+    image: "images/Projek1.png",
     link: "https://your-portfolio-link.com",
   },
   {
     title: "E-Commerce Platform",
     description: "A full-featured e-commerce site with cart and checkout flow.",
-    image: "src/assets/images/e-commerce.jpg",
+    image: "images/Projek1.png",
     link: "https://ecommerce-demo-link.com",
   },
   {
     title: "Landing Page",
     description: "Responsive landing page for a product launch.",
-    image: "src/assets/images/e-commerce.jpg",
+    image: "images/Projek1.png",
     link: "https://landing-page-link.com",
   },
   {
     title: "Landing Page",
     description: "Responsive landing page for a product launch.",
-    image: "src/assets/images/e-commerce.jpg",
+    image: "images/Projek1.png",
     link: "https://landing-page-link.com",
   },
   {
     title: "Landing Page",
     description: "Responsive landing page for a product launch.",
-    image: "src/assets/images/e-commerce.jpg",
+    image: "images/Projek1.png",
     link: "https://landing-page-link.com",
   },
 ];

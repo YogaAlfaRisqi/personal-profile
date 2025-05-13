@@ -7,11 +7,11 @@ export default function Header() {
        {/* Header Image */}
       <div
         className="relative h-48 bg-cover bg-center"
-        style={{ backgroundImage: `url('src/assets/images/banner.jpg')` }}
+        style={{ backgroundImage: `url('images/banner.jpg')` }}
       >
         {/* Avatar */}
         <img
-          src="src\assets\images\profile.jpg"
+          src="images\profile.jpg"
           alt="Profile"
           className="absolute bottom-[-45px] left-6 w-20 h-20 rounded-full border-4 border-background shadow-md"
         />
