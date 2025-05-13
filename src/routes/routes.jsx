@@ -2,6 +2,8 @@
 import { createBrowserRouter } from "react-router"
 import App from "@/App"         // Ini seharusnya layout (berisi sidebar dan <Outlet />)
 import Home from "@/pages/home"
+import WebPage from "@/pages/projects/webPage"
+
 
 const router = createBrowserRouter([
   {
@@ -12,6 +14,10 @@ const router = createBrowserRouter([
         path: "home",         // /home => children of layout
         element: <Home />,
       },
+      {
+        path: "web",
+        element:<WebPage/>
+      }
       // Tambahkan rute lain di sini
     ],
   },

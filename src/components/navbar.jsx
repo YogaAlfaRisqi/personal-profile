@@ -14,7 +14,6 @@ export default function Navbar() {
 
   return (
     <header>
-      
       <button
         onClick={() => setIsDarkMode(!isDarkMode)}
         className="p-2 rounded-md border hover:bg-accent flex items-center gap-2"

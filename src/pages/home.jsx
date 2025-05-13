@@ -1,116 +1,75 @@
-import { Button } from "@/components/ui/button";
-import { MoreHorizontal, MessageSquare } from "lucide-react";
+import Header from "@/components/header";
+import ProjectShowcase from "@/components/project-showcase";
+import Skills from "@/components/skills";
 
 export default function Home() {
   return (
-    <div className="max-w-6xl mx-auto mt-6 rounded-2xl overflow-hidden bg-muted/10 shadow-sm border border-border">
-      {/* Header Image */}
-      <div
-        className="relative h-48 bg-cover bg-center"
-        style={{ backgroundImage: `url('src/assets/images/banner.jpg')` }}
-      >
-        {/* Avatar */}
-        <img
-          src="src\assets\images\profile.jpg"
-          alt="Profile"
-          className="absolute bottom-[-45px] left-6 w-20 h-20 rounded-full border-4 border-background shadow-md"
-        />
-      </div>
+    <div className="w-full max-w-6xl mx-auto mt-6 rounded-2xl bg-muted/10 shadow-sm border border-border">
+      <Header />
 
-      {/* Profile Info */}
-      <div className="pt-14 px-6 pb-2">
-        <div className="flex justify-between items-start">
-          <div>
-            <h1 className="text-xl font-semibold">Yoga Alfa Risqi</h1>
-            <p className="text-muted-foreground">
-              I&apos;m a Fullstack App Developer based in Indonesia.
+      {/* About Section */}
+      <div className="px-4 py-6 sm:px-6">
+        <h2 className="font-semibold text-sm mb-2">About Me</h2>
+        
+        <div className="flex flex-col lg:flex-row gap-4 w-full lg:w-2/3">
+          {/* Bio Text */}
+          <div className="text-sm text-muted-foreground leading-relaxed">
+            <p>
+              I&apos;m a fresh graduate of Informatics from Universitas Mercu Buana Yogyakarta with expertise in system development, data analysis, and business process digitization. Proficient in React, Laravel, MySQL, PostgreSQL, Tailwind CSS, and more. Experienced in e-commerce and company profile website development. Certified in Microsoft Azure AI Fundamentals. I’m ambitious to grow in innovative web and mobile app development and contribute to digital innovation at PT Bukit Asam Tbk.
             </p>
           </div>
-          <div className="flex gap-2">
-            <Button variant="ghost" size="icon">
-              <MoreHorizontal className="w-4 h-4" />
-            </Button>
-            {/* <Button variant="outline" size="sm"><Video className="w-4 h-4 mr-1" /> Video call</Button> */}
-            <Button variant="secondary" size="sm">
-              <MessageSquare className="w-4 h-4 mr-1" /> Hire Me
-            </Button>
-          </div>
-        </div>
 
-        {/* About */}
-        <div className="mt-6">
-          <h2 className="font-semibold text-sm mb-1">About me</h2>
-          <div className="flex flex-row">
-            <p className="text-sm text-muted-foreground leading-relaxed basis-128  ">
-              I&apos;m a Product Designer based in Melbourne, Australia. I enjoy
-              working on product design and Webflow projects. I occasionally
-              take on freelance work. I’ve worked with some of the world’s most
-              exciting companies, including Coinbase, Stripe, and Linear. I’m
-              passionate about helping startups grow, improve their UX and
-              customer experience, and to fundraise through good design.
-            </p>
-            {/* Details Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mx-14 text-sm text-muted-foreground basis-64 justify-end ">
-              <div>
-                <p className="text-xs text-muted-foreground">Location</p>
-                <p className="">Indonesia</p>
-              </div>
-              <div>
-                <p className="text-xs text-muted-foreground">Website</p>
-                <a href="https://laylahevans.com" className="hover:underline">
-                  laylahevans.com ↗
-                </a>
-              </div>
-              <div>
-                <p className="text-xs text-muted-foreground">Portfolio</p>
-                <a
-                  href="https://instagram.com/laylahevans"
-                  className="hover:underline"
-                >
-                  @laylahevans ↗
-                </a>
-              </div>
-              <div>
-                <p className="text-xs text-muted-foreground">Email</p>
-                <a href="mailto:hi@laylahevans.com" className="hover:underline">
-                  yogariysqi3@gmail.com↗
-                </a>
-              </div>
+          {/* Details Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2  gap-5 gap-x-30 text-sm text-muted-foreground w-full lg:w-1/3">
+            <div>
+              <p className="text-xs text-muted-foreground">Location</p>
+              <p>Indonesia</p>
+            </div>
+            <div>
+              <p className="text-xs text-muted-foreground">Website</p>
+              <a href="https://laylahevans.com" className="hover:underline">
+                laylahevans.com ↗
+              </a>
+            </div>
+            <div>
+              <p className="text-xs text-muted-foreground">Github</p>
+              <a
+                href="https://github.com/YogaAlfaRisqi"
+                className="hover:underline"
+              >
+                YogaAlfaRisqi ↗
+              </a>
+            </div>
+            <div>
+              <p className="text-xs text-muted-foreground">Email</p>
+              <a
+                href="mailto:yogariysqi3@gmail.com"
+                className="hover:underline"
+              >
+                yogariysqi3@gmail.com ↗
+              </a>
             </div>
           </div>
-
-          <div className="mt-10">
-            <h2 className="font-semibold text-sm mb-1">Experience</h2>
-            <p className="text-muted-foreground text-sm">
-              I specialise in UX/UI design, brand strategy, and Webflow
-              development.
-            </p>
-          </div>
-          <div className="mt-10">
-            <h2 className="font-semibold text-sm mb-1">Skills</h2>
-            <p className="text-muted-foreground text-sm">
-              React, express.js, 
-            </p>
-          </div>
+      
         </div>
 
+        {/* Experience */}
         <div className="mt-10">
-          <h2 className="text-sm font-semibold">Recent Projects</h2>
-          <div className="mt-5 columns-3 gap-8 ...">
-            <img
-              className="aspect-square ..."
-              src="src/assets/images/e-commerce.jpg"
-            />
-            <img
-              className="aspect-square ..."
-              src="src/assets/images/e-commerce.jpg"
-            />
-            <img
-              className="aspect-square ..."
-              src="src/assets/images/e-commerce.jpg"
-            />
-          </div>
+          <h2 className="font-semibold text-sm mb-1">Experience</h2>
+          <p className="text-muted-foreground text-sm">
+            I specialise in UX/UI design, brand strategy, and Webflow development.
+          </p>
         </div>
+      </div>
+
+      {/* Skills */}
+      <div className="px-4 sm:px-6">
+        <Skills />
+      </div>
+
+      {/* Projects Section */}
+      <div className="px-4 sm:px-6 py-6">
+        <ProjectShowcase />
       </div>
     </div>
   );
