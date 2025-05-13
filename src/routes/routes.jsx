@@ -1,24 +1,26 @@
 // src/router/index.jsx
-import { createBrowserRouter } from "react-router"
-import App from "@/App"         // Ini seharusnya layout (berisi sidebar dan <Outlet />)
+import { createBrowserRouter } from "react-router-dom"
+import App from "@/App"         // App sebagai MainLayout (berisi <Outlet />)
 import Home from "@/pages/home"
 import WebPage from "@/pages/projects/webPage"
-
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,         // App sebagai layout utama
+    element: <App />,           // Main Layout
     children: [
       {
-        path: "home",         // /home => children of layout
+        index: true,           // Ini menjadikan /home sebagai default
         element: <Home />,
       },
       {
-        path: "web",
-        element:<WebPage/>
-      }
-      // Tambahkan rute lain di sini
+        path: "home",          // Tetap support /home secara eksplisit
+        element: <Home />,
+      },
+      {
+        path: "projects/web",
+        element: <WebPage />,
+      },
     ],
   },
 ])

@@ -1,3 +1,4 @@
+import Home from "@/pages/home";
 import SidebarLayout from "./sidebarLayout";
 
 export default function mainLayout() {
@@ -5,6 +6,7 @@ export default function mainLayout() {
      <>
        <div>
         <SidebarLayout/>
+        <Home/>
        </div>
      </>
   );
